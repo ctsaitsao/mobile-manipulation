@@ -1,0 +1,7 @@
+type of controller: feedforward-plus-PI
+
+Tsc_initial = [1 0 0 1; 0 1 0 0; 0 0 1 0.025; 0 0 0 1]
+Tsc_final = [0 1 0 0; -1 0 0 -1; 0 0 1 0.025; 0 0 0 1]
+k = 20
+Kp = 1.7
+Ki = 0.8

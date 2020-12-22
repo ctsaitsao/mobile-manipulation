@@ -1,0 +1,10 @@
+type of controller: feedforward-plus-PI
+
+Tsc_initial = [1 0 0 1; 0 1 0 0; 0 0 1 0.025; 0 0 0 1]
+Tsc_final = [0 1 0 0; -1 0 0 -1; 0 0 1 0.025; 0 0 0 1]
+k = 10
+Kp = 1.98 
+Ki = 0.8
+
+Interestingly, this amount of overshoot only happened at a very specific amount of Kp. A Kp value of 2 made the system unstable, one of 1.99 had too much overshoot, and one of 1.97 had almost no overshoot. So 1.98 was just right.
+See Good Overshoot and Too Little Overshoot Graphs for comparison.
