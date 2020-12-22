@@ -6,7 +6,9 @@ This project consisted of controlling a simulated mobile manipulator to carry a 
 
 ## The Robot
 The mobile manipulator, called the "youBot", consists of a mobile base with four mecanum wheels and a 5R robot arm. Its configuration can be represented using the following 13 degrees of freedom: chassis phi, chassis x, chassis y, J1, J2, J3, J4, J5, W1, W2, W3, W4, gripper state. J1 to J5 are the arm joint angles and W1 to W4 are the four wheel angles.
-![](images/robot.png)
+<br>
+<br>
+<img src="youBot.png" width="700">
 
 ## Workflow
 The MATLAB software first creates a reference trajectory that the youBot is meant to follow. It then performs odometry as well as feedback control calculations to move and simulate the robot as close as possible to the trajectory. During the trajectory, the robot picks-and-places a cube of known parameters in specified locations. The process can be separated into the following steps:
